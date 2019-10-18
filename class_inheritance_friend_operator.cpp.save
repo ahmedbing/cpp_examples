@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+//Implement the class Box  
+//l,b,h are integers representing the dimensions of the box
+
+// The class should have the following functions : 
+
+// Constructors: 
+// Box();
+// Box(int,int,int);
+// Box(Box);
+  GNU nano 2.9.3        class_inheritance_friend_operator.cpp                   
+
+    if((box2.l==this->l) & (this->b <box2.b))
+        return true;
+    if((box2.l==this->l)&(box2.b==this->b)&(this->h < box2.h))
+        return true;
+    return false;
+}
+ostream& operator << ( ostream &out, Box &b2){
+    out<<b2.l<<" "<<b2.b<<" "<<b2.h;
+    return out;
+}
+
+
+
+
